@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品图展示</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #box {
+            width: 360px;
+            border: 1px solid #ccc;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        #box ul {
+            overflow: hidden;
+            border-top: 1px solid #ccc;
+        }
+
+        #box li {
+            float: left;
+            cursor: pointer;
+        }
+
+        #box img {
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img src="./images/01big.jpg" alt="" id="bigImg">
+        <ul id="itemList">
+            <li><img src="./images/01.jpg"></li>
+            <li><img src="./images/02.jpg"></li>
+            <li><img src="./images/03.jpg"></li>
+            <li><img src="./images/04.jpg"></li>
+            <li><img src="./images/05.jpg"></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // 1、获取 ul 下，所有的图片
+    const itemList = document.getElementById('itemList');
+    const items = itemList.getElementsByTagName('img');
+    // 2、获取大图
+    const bigItem = document.getElementById('bigImg');
+    // 3、点击相应图片，大图替换
+    for (let i = 0; i < items.length; i ++) {
+        items[i].onclick = function() {
+            bigItem.src = `./images/0${i + 1}big.jpg`;
+        };
+    }
+</script>
+</html>
