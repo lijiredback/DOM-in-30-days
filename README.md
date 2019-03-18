@@ -1,8 +1,7 @@
 ## 演示效果图
 
 ### 01
-
-
+![images](https://github.com/pantone44/DOM-in-30-days/blob/master/imgs/01.gif)
 
 #### DOM(文档对象模型)
 
