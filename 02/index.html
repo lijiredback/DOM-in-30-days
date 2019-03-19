@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二维码</title>
+    <style>
+        .container {
+            width: 258px;
+            height: 258px;
+            background: url(./images/code-small.jpg) no-repeat;
+            position: fixed;
+            right: 10px;
+            top: 40%;
+        }
+
+        .big-code {
+            position: absolute;
+            top: -50px;
+            left: -358px;
+        }
+
+        .container a {
+            display: block;
+            width: 258px;
+            height: 258px;
+        }
+        
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="small-code">
+        <a href="#"></a>
+        <div class="big-code hide" id="big-code">
+            <img src="./images/code-big.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    const smallCode = document.getElementById('small-code');
+    const bigCode = document.getElementById('big-code');
+
+    smallCode.onmouseover = function() {
+        bigCode.className =  bigCode.className.replace('hide', 'show');
+    };
+
+    smallCode.onmouseout = function() {
+        bigCode.className =  bigCode.className.replace('show', 'hide');
+    };     
+</script>
+</html>

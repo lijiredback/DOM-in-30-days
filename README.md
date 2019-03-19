@@ -3,6 +3,18 @@
 ### 01
 ![images](https://github.com/pantone44/DOM-in-30-days/blob/master/imgs/01.gif)
 
+**知识点：**
++ document.getElementById()
++ document.getElementsByTagName()
++ onclick
+
+### 02
+![images](https://github.com/pantone44/DOM-in-30-days/blob/master/imgs/02.gif)
+
+**知识点**
++ onmouseover
++ onmouseout
+
 #### DOM(文档对象模型)
 
 + 文档（Document）：HTML 文件
