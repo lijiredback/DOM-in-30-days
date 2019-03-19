@@ -6,14 +6,21 @@
 **知识点：**
 + document.getElementById()
 + document.getElementsByTagName()
-+ onclick
++ click / [Mouse Events]
 
 ### 02
 ![images](https://github.com/pantone44/DOM-in-30-days/blob/master/imgs/02.gif)
 
 **知识点**
-+ onmouseover
-+ onmouseout
++ mouseover / [Mouse Events]
++ mouseout / [Mouse Events]
+
+### 03
+![images](https://github.com/pantone44/DOM-in-30-days/blob/master/imgs/03.gif)
+
+**知识点**
++ focus / [Form Events]
++ blur / [Form Events]
 
 #### DOM(文档对象模型)
 
