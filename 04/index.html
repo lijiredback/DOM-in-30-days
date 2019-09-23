@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            border: 1px solid #000;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+<script>
+    // 深拷贝：浅拷贝 + 递归
+
+    function shallowClone(source) {
+        var target = {};
+        for (var i in source) {
+            if (source.hasOwnProperty(i)) {
+                target[i] = source[i];
+            }
+        }
+        return target;
+    }
+
+    var o1 = { a: 1 };
+    shallowClone(o1);
+</script>
+
+</html>
